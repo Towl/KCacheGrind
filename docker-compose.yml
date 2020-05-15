@@ -1,0 +1,12 @@
+version: "3.6"
+
+services:
+  kcachegrind:
+    build: .
+    container_name: kcachegrind
+    environment:
+      - "DISPLAY=host.docker.internal${DISPLAY_NUMBER}"
+    volumes:
+# To replace with the orginal source code
+# It will be helpfule to get the corresponding position in source.
+#      - "$HOME/code:/code"
